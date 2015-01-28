@@ -30,3 +30,27 @@ After installing, you need to require Composer's autoloader:
 ```php
 require 'vendor/autoload.php';
 ```
+
+### Usage
+```php
+use Headzoo\Nexmo\Sms;
+use Headzoo\Nexmo\Exception\Exception;
+
+$nexmo_api_key = "n3xm0rocks";
+$nexmo_api_secret = "12ab34cd";
+$from = "12015555555";
+$sms = Sms::factory($nexmo_api_key, $nexmo_api_secret, $from);
+
+try {
+	$to = "19295555555";
+	$message = "Hello, World!";
+	$response = $sms->text($to, $message);
+	foreach($response as $message) {
+		echo "Message ID: " . $message->getId();
+		echo "Message price: " . $message->getPrice();
+		echo "Remaining balance: " . $message->getBalance();
+	}
+} catch (Exception $e) {
+	echo $e->getMessage();
+}
+```
