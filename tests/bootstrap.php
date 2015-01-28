@@ -1,3 +1,2 @@
 <?php
-$loader = @include __DIR__.'/../vendor/autoload.php';
-$loader->addPsr4('Headzoo\\Nexmo\\', __DIR__);
+include __DIR__ . "/../vendor/autoload.php";
