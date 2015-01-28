@@ -2,7 +2,7 @@
 use Headzoo\Nexmo\Message;
 
 /**
- * @coversDefaultClass Message
+ * @coversDefaultClass Headzoo\Nexmo\Message
  */
 class MessageTest
     extends PHPUnit_Framework_TestCase

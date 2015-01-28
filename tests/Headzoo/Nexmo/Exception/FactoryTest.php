@@ -2,7 +2,7 @@
 use Headzoo\Nexmo\Exception;
 
 /**
- * @coversDefaultClass Exception\Factory
+ * @coversDefaultClass Headzoo\Nexmo\Exception\Factory
  */
 class FactoryTest
     extends PHPUnit_Framework_TestCase

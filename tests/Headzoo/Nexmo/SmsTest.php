@@ -4,7 +4,7 @@ use Headzoo\Nexmo\Message;
 use Headzoo\Nexmo\Sms;
 
 /**
- * @coversDefaultClass Sms
+ * @coversDefaultClass Headzoo\Nexmo\Sms
  */
 class SmsTest
     extends PHPUnit_Framework_TestCase
