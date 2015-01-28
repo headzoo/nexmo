@@ -1,6 +1,9 @@
 # Headzoo Nexmo
 Library for communicating with the Nexmo SMS API.
 
+[![Build Status](https://secure.travis-ci.org/headzoo/nexmo.png?branch=master)](http://travis-ci.org/headzoo/nexmo)
+
+
 ### Installing via Composer
 
 The recommended way to install headzoo/nexmo is through
