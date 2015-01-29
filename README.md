@@ -8,7 +8,7 @@ Library for communicating with the Nexmo SMS API.
 
 
 ### Overview
-[Nexmo](https://www.nexmo.com) is an inexpensive provider of voice and text (SMS) services based in the UK. This library is used to communicate with their API for the purpose of sending text messages to cell phones.
+[Nexmo](https://www.nexmo.com) is an inexpensive provider of voice and text (SMS) services based in the UK. This library is used to communicate with their API for the purpose of sending text messages to mobile devices.
 
 
 ### Installing via Composer
