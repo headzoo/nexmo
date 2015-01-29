@@ -4,7 +4,7 @@ Library for communicating with the Nexmo SMS API.
 
 [![Build Status](https://travis-ci.org/headzoo/nexmo.svg?branch=master)](https://travis-ci.org/headzoo/nexmo)
 [![Latest Stable Version](https://poser.pugx.org/headzoo/nexmo/v/stable.svg)](https://packagist.org/packages/headzoo/nexmo)
-[![License](https://poser.pugx.org/headzoo/nexmo/license.svg)](https://packagist.org/packages/headzoo/nexmo)
+[![MIT License](https://poser.pugx.org/headzoo/nexmo/license.svg)](https://packagist.org/packages/headzoo/nexmo)
 
 
 ### Overview
