@@ -12,9 +12,21 @@ class SmsTest
     protected $key    = "n3xm0rocks";
     protected $secret = "12ab34cd";
     protected $from   = "15555555555";
+
+    /**
+     * @covers ::text
+     * @covers ::send
+     * @expectedException Headzoo\Nexmo\Exception\ConfigurationException
+     */
+    public function testSendException()
+    {
+        $sms = new Sms($this->getMock(GuzzleHttp\ClientInterface::class));
+        $sms->text("12015555555", "Testing");
+    }
     
     /**
      * @covers ::text
+     * @covers ::send
      */
     public function testText()
     {

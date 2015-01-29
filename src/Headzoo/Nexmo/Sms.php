@@ -208,7 +208,7 @@ class Sms
     protected function send(array $query)
     {
         if (!$this->key || !$this->secret || !$this->from) {
-            throw new Exception\Exception(
+            throw new Exception\ConfigurationException(
                 "Invalid configuration. Missing key, secret, or from."
             );
         }
