@@ -207,6 +207,12 @@ class Sms
      */
     protected function send(array $query)
     {
+        if (!$this->key || !$this->secret || !$this->from) {
+            throw new Exception\Exception(
+                "Invalid configuration. Missing key, secret, or from."
+            );
+        }
+        
         $query["api_key"]           = $this->key;
         $query["api_secret"]        = $this->secret;
         $query["from"]              = $this->from;
