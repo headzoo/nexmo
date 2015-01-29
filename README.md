@@ -49,7 +49,7 @@ use Headzoo\Nexmo\Exception\Exception;
 
 // Start by creating an instance of Sms. You must have a Nexmo API key and secret, which you can find
 // on the Nexmo dashboard. https://dashboard.nexmo.com/private/dashboard
-// You also provide the "from" number or name. Each text you sent with the return instance will be sent
+// You also provide the "from" number or name. Each text you sent with the Sms instance will be sent
 // from that number.
 $nexmo_api_key = "n3xm0rocks";
 $nexmo_api_secret = "12ab34cd";
@@ -59,7 +59,8 @@ $sms = Sms::factory($nexmo_api_key, $nexmo_api_secret, $from);
 
 // To send a text message you pass the number you are sending to, in international format, along with
 // the message to send. A Response instance is returned from which you can gather the details of the
-// sent message. Keep in mind Nexmo may break up your text into several messages.
+// sent message. Keep in mind Nexmo may break up your text into several messages depending on
+// the size of the sent message, and the Response will contain multiple Message instances.
 try {
 	$to = "19295555555";
 	$message = "Hello, World!";
